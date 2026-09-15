@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects / Work - Jeremiah Hass Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Jeremiah Hass</h1>
+        <p>IT Specialist • Systems & Automation • Founder @ Vexon Studio</p>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" aria-current="page">Projects / Work</a></li>
+                <li><a href="about.html">About / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects & Engineering Showcase</h2>
+            <p>Explore current AI architectures, active web applications, community platforms, and archive projects below:</p>
+
+            <div class="filter-container" role="region" aria-label="Project Filtering">
+                <button class="filter-btn active" data-filter="all" type="button">All Projects</button>
+                <button class="filter-btn" data-filter="vexon" type="button">Vexon Studio & AI</button>
+                <button class="filter-btn" data-filter="web" type="button">Web Systems</button>
+                <button class="filter-btn" data-filter="archive" type="button">Past Work & Showcase</button>
+            </div>
+
+            <div class="cards" id="projects-grid">
+                
+                <!-- VEXARA -->
+                <article class="card" data-category="vexon">
+                    <div>
+                        <span class="card-tag">Vexon Studio / AI</span>
+                        <h3>VEXARA — Autonomous VTuber Intelligence</h3>
+                        <p>An autonomous agent architecture engineered for real-time interaction, screen perception, natural speech processing, and independent stream operation.</p>
+                        <pre style="background: #090D16; color: #38BDF8; padding: 12px; border-radius: 6px; font-size: 0.75rem; overflow-x: auto; margin: 10px 0;">
+VexonStudio
+  ├── Vexon OS
+  └── Vexara
+        ├── VX-AI-01 Core
+        ├── Personality & Memory Engines
+        ├── Voice & Vision Engines
+        └── Game & Streaming Agents
+                        </pre>
+                    </div>
+                    <a href="https://github.com/SLCCEO" class="button" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                </article>
+
+                <!-- VEXON OS -->
+                <article class="card" data-category="vexon">
+                    <div>
+                        <span class="card-tag">Vexon Studio / OS</span>
+                        <h3>VEXON OS — Core Architecture</h3>
+                        <p>Central Web Dashboard connected via HTTPS/WebSocket to a Node.js / TypeScript Core API. Integrates local AI adapters, STT/TTS providers, and SQLite + Vector DB storage.</p>
+                        <pre style="background: #090D16; color: #38BDF8; padding: 12px; border-radius: 6px; font-size: 0.75rem; overflow-x: auto; margin: 10px 0;">
+VEXON OS (Web Dashboard)
+   └── VEXON CORE API (Node.js/TS)
+         ├── AI / Voice / Memory Systems
+         └── Integrations: Twitch, Discord,
+             GitHub, Proxmox, OBS
+                        </pre>
+                    </div>
+                    <a href="https://github.com/SLCCEO" class="button" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                </article>
+
+                <!-- SATO ACCORD -->
+                <article class="card" data-category="web">
+                    <div>
+                        <span class="card-tag">Web Design</span>
+                        <h3>SATO Accord Portal</h3>
+                        <p>Community platform website engineered with clean responsive design, user flow navigation, and custom brand integration.</p>
+                    </div>
+                    <a href="https://www.satoaccord.com" class="button" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                </article>
+
+                <!-- SINGULARITY LABS -->
+                <article class="card" data-category="web">
+                    <div>
+                        <span class="card-tag">Web Application</span>
+                        <h3>Singularity Labs — Corporate Secure Portal</h3>
+                        <p>Technical, minimalist, and secure-themed design focused on functional UI, user authentication flows, and corporate terminal aesthetics.</p>
+                    </div>
+                    <a href="https://slcceo.github.io/SLC-Website/" class="button" target="_blank" rel="noopener noreferrer">Launch Site</a>
+                </article>
+
+                <!-- NATE CINEMATICS -->
+                <article class="card" data-category="web">
+                    <div>
+                        <span class="card-tag">Media & Design</span>
+                        <h3>Nate Cinematics Landing Page</h3>
+                        <p>Production partner landing page focused on clean, high-end media presentation and responsive video production aesthetics.</p>
+                    </div>
+                    <a href="https://nate-cinematics-spireworks.vercel.app" class="button" target="_blank" rel="noopener noreferrer">Launch Site</a>
+                </article>
+
+                <!-- SFD STRATEGIC FOUNDATION DIVISION (LOCAL VIDEO SHOWCASE) -->
+                <article class="card" data-category="archive" style="grid-column: 1 / -1;">
+                    <div>
+                        <span class="card-tag">Legacy Project / Video Showcase</span>
+                        <h3>[SFD] Strategic Foundation Division & Academy Portal</h3>
+                        <p>An archival project showcasing web design, UI layouts, and community management structures. Below is a video showcase demonstrating the system capabilities:</p>
+                        
+                        <!-- Local Video Container -->
+                        <div style="margin: 20px 0; background: #090D16; padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+                            <h4 style="color: var(--brand-neon); margin-bottom: 12px;">Project Showcase Reel</h4>
+                            <div style="width: 100%; border-radius: 6px; overflow: hidden; background-color: #000;">
+                                <video controls width="100%" style="display: block; border-radius: 6px;">
+                                    <source src="videos/sfd-showcase.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/SLCCEO" class="button" target="_blank" rel="noopener noreferrer">View Repository</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for Campus.edu • Milestone 4</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

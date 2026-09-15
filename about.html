@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About / Contact - Jeremiah Hass Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Jeremiah Hass</h1>
+        <p>IT Specialist • Systems & Automation • Brand Founder @ Vexon Studio</p>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects / Work</a></li>
+                <li><a href="about.html" aria-current="page">About / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>I am an Associate of Science in IT student at Campus.edu and the creator behind <strong>Vexon Studio</strong>. With background experience ranging from Help Desk technical support at Blue Paladin to active Python scripting and AV systems design, I focus on building reliable technical infrastructure and pushing forward autonomous AI experiments.</p>
+            <p>Connect with me professionally via <a href="https://www.linkedin.com/in/jeremiahmhass/" target="_blank" rel="noopener noreferrer">LinkedIn</a> or check out my repositories on <a href="https://github.com/SLCCEO" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        </section>
+
+        <section aria-labelledby="creds-heading">
+            <h2 id="creds-heading">Education & Certifications</h2>
+            <div class="cards">
+                <article class="card">
+                    <span class="card-tag">Education</span>
+                    <h3>Academic Progress</h3>
+                    <p><strong>Associate of Science in Information Technology</strong><br>Campus.edu (Campus Scholars Program)<br><em>March 2026 – Present</em></p>
+                </article>
+                <article class="card">
+                    <span class="card-tag">Certifications</span>
+                    <h3>Professional Certifications</h3>
+                    <p>• Google IT Support Professional Certificate<br>• Microsoft Certified Fundamentals<br>• IT Technical Support & Troubleshooting</p>
+                </article>
+                <article class="card">
+                    <span class="card-tag">Brand</span>
+                    <h3>Vexon Studio Projects</h3>
+                    <p>• <strong>VEXARA:</strong> Autonomous VTuber Intelligence Agent<br>• <strong>VEXON OS:</strong> Central API & Hardware Dashboard<br>• <strong>Media Systems:</strong> Audio-visual productions and stream engineering</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <p>Direct inquiries can be sent via email to <a href="mailto:contact@vixon.online">contact@vixon.online</a> or by submitting the form below:</p>
+
+            <form id="contact-form" action="#" method="POST" novalidate>
+                <fieldset>
+                    <legend>Direct Message Form</legend>
+
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required-star" aria-hidden="true">*</span></label>
+                        <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required-star" aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiry-type">Inquiry Category <span class="required-star" aria-hidden="true">*</span></label>
+                        <select id="inquiry-type" name="inquiry-type" required aria-required="true">
+                            <option value="">-- Please Select an Option --</option>
+                            <option value="it-support">IT / Technical Support</option>
+                            <option value="vexon-studio">Vexon Studio / AI Inquiries</option>
+                            <option value="project">Project Collaboration</option>
+                            <option value="general">General Contact</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required-star" aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+
+                    <button class="button" type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for Campus.edu • Milestone 4</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

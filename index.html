@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Jeremiah Hass Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Jeremiah Hass</h1>
+        <p>IT Specialist • Systems & Automation • Brand Founder @ Vexon Studio</p>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="projects.html">Projects / Work</a></li>
+                <li><a href="about.html">About / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome & Professional Overview</h2>
+            <p>Welcome to my portfolio. I am an Information Technology Specialist pursuing an Associate of Science in IT through Campus.edu, with experience in Help Desk support, system infrastructure, and automation. Beyond my formal IT background, I lead creative and technical engineering under my brand <strong>Vexon Studio</strong>, focusing on autonomous AI architectures, media systems, and stream automation.</p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
+                <a class="button" href="projects.html">Explore Projects</a>
+                <a class="button" href="https://www.linkedin.com/in/jeremiahmhass/" target="_blank" rel="noopener noreferrer" style="background-color: #0077b5;">LinkedIn Profile</a>
+            </div>
+        </section>
+
+        <section aria-labelledby="focus-heading">
+            <h2 id="focus-heading">Core Domains</h2>
+            <div class="cards">
+                <article class="card">
+                    <span class="card-tag">Systems & IT</span>
+                    <h3>IT Support & Help Desk Operations</h3>
+                    <p>4 months of structured Help Desk experience with Blue Paladin. Operating system provisioning and diagnostic troubleshooting across Windows, macOS, and Linux CLI environments.</p>
+                </article>
+                <article class="card">
+                    <span class="card-tag">AI Engineering</span>
+                    <h3>Vexara — Autonomous Intelligence</h3>
+                    <p>Architecting an autonomous VTuber agent driven by an observe → understand → decide → act pipeline with memory systems, TTS/STT, and vision modules.</p>
+                </article>
+                <article class="card">
+                    <span class="card-tag">Infrastructure</span>
+                    <h3>Vexon OS — Control Architecture</h3>
+                    <p>Node.js/TypeScript core API featuring WebSockets, SQLite + Vector DB storage, and integration layers for Twitch, Discord, OBS, Proxmox, and GitHub.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="featured" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Live Data Integration</h2>
+            <p>Below is live telemetry fetched dynamically via GitHub's API:</p>
+            <!-- Injected via script.js -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for Campus.edu • Milestone 4</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
