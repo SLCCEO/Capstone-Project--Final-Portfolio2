@@ -6,9 +6,9 @@
     --text-primary: #F8FAFC;      /* High-contrast crisp white body text */
     --text-muted: #D9E2F2;        /* Improved contrast for secondary text */
     --brand-primary: #1E293B;     /* Deep header/footer container tone */
-    --brand-accent: #0D9488;      /* Vibrant Teal primary action color */
-    --brand-accent-hover: #14B8A6;/* Lighter Teal hover state */
-    --brand-neon: #7DD3FC;        /* Stronger cyan accent for dark backgrounds */
+    --brand-accent: #DFFCF5;      /* Light teal action color with dark text */
+    --brand-accent-hover: #B8FFF2;/* Slightly darker hover state */
+    --brand-neon: #E0F2FE;        /* High-contrast light cyan for dark backgrounds */
     --error-color: #F87171;       /* High contrast alert red */
     --success-bg: #064E3B;        /* Dark emerald success container */
     --success-text: #A7F3D0;      /* Bright mint success text */
@@ -94,12 +94,12 @@ nav a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.05);
     border-color: var(--border-color);
-    color: var(--brand-neon);
+    color: #F8FAFC;
 }
 
 nav a[aria-current="page"] {
     background-color: var(--brand-accent);
-    color: #ffffff;
+    color: #0B0F19;
     border-color: var(--brand-accent);
 }
 
@@ -198,7 +198,7 @@ a {
 }
 
 a:hover {
-    color: #38BDF8;
+    color: #F8FAFC;
 }
 
 /* --- Component Styles --- */
@@ -228,9 +228,9 @@ a:hover {
 
 .card-tag {
     display: inline-block;
-    background-color: rgba(13, 148, 136, 0.15);
-    color: #B8FFF2;
-    border: 1px solid rgba(184, 255, 242, 0.35);
+    background-color: #E0F2FE;
+    color: #0B0F19;
+    border: 1px solid rgba(224, 242, 254, 0.6);
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -244,7 +244,7 @@ a:hover {
 .button {
     display: inline-block;
     background-color: var(--brand-accent);
-    color: #ffffff;
+    color: #0B0F19;
     padding: 12px 22px;
     border-radius: 8px;
     text-decoration: none;
@@ -253,13 +253,13 @@ a:hover {
     cursor: pointer;
     text-align: center;
     transition: all 0.2s ease;
-    box-shadow: 0 2px 10px rgba(13, 148, 136, 0.3);
+    box-shadow: 0 2px 10px rgba(223, 252, 245, 0.3);
 }
 
 .button:hover {
     background-color: var(--brand-accent-hover);
-    color: #ffffff;
-    box-shadow: 0 4px 15px rgba(20, 184, 166, 0.4);
+    color: #0B0F19;
+    box-shadow: 0 4px 15px rgba(184, 255, 242, 0.4);
 }
 
 #featured {
@@ -298,7 +298,7 @@ a:hover {
 
 .filter-btn.active {
     background-color: var(--brand-accent);
-    color: #ffffff;
+    color: #0B0F19;
     border-color: var(--brand-accent);
 }
 
@@ -386,7 +386,7 @@ select[aria-invalid="true"] {
 pre {
     background: #090D16 !important;
     border: 1px solid var(--border-color);
-    color: #38BDF8 !important;
+    color: #E0F2FE !important;
 }
 
 /* --- Footer --- */
