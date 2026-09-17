@@ -4,14 +4,14 @@
     --bg-card: #151C2C;           /* Dark slate card container */
     --bg-card-hover: #1E293B;     /* Slightly lighter slate for card hover state */
     --text-primary: #F8FAFC;      /* High-contrast crisp white body text */
-    --text-muted: #94A3B8;        /* Soft muted blue-gray for secondary text */
+    --text-muted: #D9E2F2;        /* Improved contrast for secondary text */
     --brand-primary: #1E293B;     /* Deep header/footer container tone */
     --brand-accent: #0D9488;      /* Vibrant Teal primary action color */
     --brand-accent-hover: #14B8A6;/* Lighter Teal hover state */
-    --brand-neon: #06B6D4;        /* Cyan accent highlight */
-    --error-color: #EF4444;       /* High contrast alert red */
+    --brand-neon: #7DD3FC;        /* Stronger cyan accent for dark backgrounds */
+    --error-color: #F87171;       /* High contrast alert red */
     --success-bg: #064E3B;        /* Dark emerald success container */
-    --success-text: #6EE7B7;      /* Bright mint success text */
+    --success-text: #A7F3D0;      /* Bright mint success text */
     --border-color: #334155;     /* Subtle divider border */
     --focus-ring: #38BDF8;        /* Bright accessibility outline ring */
 }
@@ -229,8 +229,8 @@ a:hover {
 .card-tag {
     display: inline-block;
     background-color: rgba(13, 148, 136, 0.15);
-    color: #2DD4BF;
-    border: 1px solid rgba(45, 212, 191, 0.3);
+    color: #B8FFF2;
+    border: 1px solid rgba(184, 255, 242, 0.35);
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;

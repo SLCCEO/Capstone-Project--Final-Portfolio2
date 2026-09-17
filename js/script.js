@@ -5,8 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (nav && ul) {
         const menuButton = document.createElement("button");
+        menuButton.type = "button";
         menuButton.textContent = "☰ Menu";
         menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-controls", "primary-navigation");
         menuButton.setAttribute("aria-label", "Toggle Main Navigation Menu");
         menuButton.className = "menu-toggle";
         nav.insertBefore(menuButton, ul);
